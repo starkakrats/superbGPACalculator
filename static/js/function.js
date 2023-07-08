@@ -127,7 +127,7 @@ function calit()
 }
 
 function letter_hund(lgrade, type) {
-    var map = {'s4': standard_4(), 's41': standard_4_1(), 's42': standard_4_2(), 'p4': peking_4(), 'c4': canada_4_3(), 'sjt4': SJTU_4_3(), 'cs4': CSU_4_3()};
+    var map = {'s4': standard_4(), 's41': standard_4_1(), 's42': standard_4_2(), 'p4': peking_4(), 'c4': canada_4_3(), 'sjt4': SJTU_4_3(), 'cs4': CSU_4_3(), 'nk4': NKU_4_0()};
     var calculator = map[type];
     var threshold = calculator['threshold'];
     var letter_val = calculator['letter'];
@@ -141,7 +141,7 @@ function letter_hund(lgrade, type) {
 }
 
 function gpa_four(hgrade, lgrade, type) {
-    var map = {'s4': standard_4(), 's41': standard_4_1(), 's42': standard_4_2(), 'p4': peking_4(), 'c4': canada_4_3(), 'sjt4': SJTU_4_3(), 'cs4': CSU_4_3()};
+    var map = {'s4': standard_4(), 's41': standard_4_1(), 's42': standard_4_2(), 'p4': peking_4(), 'c4': canada_4_3(), 'sjt4': SJTU_4_3(), 'cs4': CSU_4_3(), 'nk4': NKU_4_0()};
     var calculator = map[type];
     var threshold = calculator['threshold'];
     var letter_val = calculator['letter'];
