@@ -169,7 +169,7 @@ function gpa_four(hgrade, lgrade, type) {
 
 function gpa_letter(hgrade, type)
 {
-    var map = {'s4': standard_4(), 's41': standard_4_1(), 's42': standard_4_2(), 'p4': peking_4(), 'c4': canada_4_3(), 'sjt4': SJTU_4_3(), 'cs4': CSU_4_3()};
+    var map = {'s4': standard_4(), 's41': standard_4_1(), 's42': standard_4_2(), 'p4': peking_4(), 'c4': canada_4_3(), 'sjt4': SJTU_4_3(), 'cs4': CSU_4_3(), 'nk4': NKU_4_0()};
     var calculator = map[type];
     var threshold = calculator['threshold'];
     var letter_val = calculator['letter'];
@@ -258,6 +258,14 @@ function SJTU_4_3() {
     var threshold = new Array(95,90,85,80,75,70,67,65,62,60);
     var letter_val = new Array('A+','A','B+','B','C+','C','C-','D+','D','D-');
     var gpa_val = new Array(4.3,4.0,3.7,3.3,3.0,2.7,2.3,2.0,1.7,1.0);
+    var map = {'threshold': threshold, 'letter': letter_val, 'gpa': gpa_val};
+    return map;
+}
+
+function NKU_4_0() {
+    var threshold = new Array(90,85,81,78,75,72,69,66,60);
+    var letter_val = new Array('A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D');
+    var gpa_val = new Array(4.0,3.7,3.3,3.0,2.7,2.3,2.0,1.7,1.0);
     var map = {'threshold': threshold, 'letter': letter_val, 'gpa': gpa_val};
     return map;
 }
