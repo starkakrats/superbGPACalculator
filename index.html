@@ -1,11 +1,9 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en-US">
 <head>
 <meta charset="utf-8"> 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="sndnyang" />
-<meta name="copyright" content="sndnyang" />
 
 <meta property="og:type" content="article" />
 <meta name="twitter:card" content="summary">
@@ -36,45 +34,10 @@ body { padding-top: 50px; padding-bottom: 10px; }
 </head>
 <body onload="init()">
 <div id="content-sans-footer">
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container-fluid">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                <a class="brand" href="/"><span class=site-name>懒龙谷</span></a>
-                <div class="nav-collapse collapse">
-                    <ul class="nav pull-right top-menu">
-                        <li ><a href="/">Home</a></li>
-                        <li ><a href="http://www.zhimind.com">zhimind home</a></li>
-                        <li ><a href="/categories.html">Categories</a></li>
-                        <li ><a href="/tags.html">Tags</a></li>
-                        <li ><a href="/archives.html">Archives</a></li>
-                        <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">留学<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li ><a href="http://www.zhimind.com/college.html">学校库</a></li>
-                            <li ><a href="http://www.zhimind.com/major.html">专业库</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">工具</li>
-                            <li><a href="/gpa_calculator.html">GPA计算器</a></li>
-                            <li><a href="http://www.zhimind.com/reciteWord.html">脑洞背单词</a></li>
-                        </ul>
-                        </li>
-                        <li><form class="navbar-search" action="/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="container-fluid">
         <div id="wrap" class="span9">
             <h1>GPA 计算器calculator</h1>
             <div id="main">
-                <a href="gpa_calculator_en.html">English version</a>
                 <div id="GPAForm">
                     <p>通过本程序，可以方便的计算出您所修读的课程的GPA。具体方法是在下面的方框中输入您</p>
                     <p>修读获得的课程学分和课程分数（如果是等级制的，在下拉框选择对应等级），页面下方会累计加权结果。</p>
@@ -678,8 +641,7 @@ body { padding-top: 50px; padding-bottom: 10px; }
     </div>
     <div id="footer" class="span12">
         <p>
-        这是 gpa calculator。 made in China, 杨秀隆 xiulong.yancey.yang@gmail.com  
-        <a href="mailto:sndnyangd@gmail.com">sndnyangd.gmail.com</a>
+        fork自<a href="https://github.com/sndnyang/superbGPACalculator">superbGPACalculator</a>  
         </p>
     </div>
 </div>
